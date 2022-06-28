@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/estilos-palabra.css">
+        <script src="https://kit.fontawesome.com/8f5dceeba9.js" crossorigin="anonymous"></script>
+        <title>Agregar nueva palabra</title>
+    </head>
+    <body class="contenedor">
+        <header class="encabezado">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div class="titulo">
+                <h1>Agregar nueva palabra</h1>
+            </div>
+        </header>
+        <main class="contenido">        
+            <input id="campo-palabra" maxlength="12" spellcheck="false" placeholder="Ingrese la palabra">
+            <label id="aviso" for="campo-palabra">⚠️ Máximo de 12 letras</label>        
+        </main>
+        <div class="botones">
+            <button class="boton" id="guardar"><span>Guardar y Comenzar</span></button>        
+            <button class="boton" id="lista"><span>Ver Lista</span></button>
+            <button class="boton" id="cancelar"><span>Cancelar</span></button>        
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <div class="boton-cerrar">
+                    <a href="#" id="cerrar-popup" class="cerrar-popup"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="palabras" id="palabras"></div>
+            </div>
+        </div>
+        <footer class="pie-pagina">
+            <p>&#174; Mario Salvador Barajas Chávez 2022</p>
+        </footer>
+    </body>
+    <script type="module" src="./scripts/agregarPalabra.js"></script>
+</html>

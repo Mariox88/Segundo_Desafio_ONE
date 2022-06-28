@@ -1,0 +1,71 @@
+:root {
+    --encabezado: #222;
+    --texto-principal: #FFF;
+    --fondo-principal: #444;
+    --fuente-principal: 'Ubuntu', sans-serif;
+}
+.contenedor {
+    display: grid;
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--fuente-principal);
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px 1fr 80px;
+    overflow: hidden;    
+}
+.contenedor .encabezado {
+    position: relative;
+    display: flex;
+    background: var(--encabezado);
+    color: var(--texto-principal);
+    grid-column: 2 span;
+}
+.contenedor .titulo {
+    flex: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.contenedor .logo {    
+    position: absolute;
+    top: 16px;
+    left: 15%;
+    align-items: center;
+    justify-content: center;    
+    filter: brightness(20000%);
+}
+.contenedor .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2 span;
+}
+.boton {
+    margin: 10px;
+    width: 300px;
+    height: 100px;
+    backdrop-filter: blur(5px);
+    background: rgba(63, 63, 63, 0.8);
+    font-size: 30px;
+    color: var(--texto-principal);
+    text-shadow: 0 0 5px #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8);
+}
+.boton:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8);
+}
+.contenedor .pie-pagina {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: var(--encabezado);
+    color: var(--texto-principal);
+    grid-column: 2 span;
+}
