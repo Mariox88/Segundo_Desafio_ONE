@@ -5,6 +5,7 @@ export const onInput = (event) => {
     event.target.value = event.target.value.replace(/[^a-zA-ZñÑ]/g, '');
 };
 export const guardarPalabra = () => {
+    const campoNuevaPalabra = document.querySelector('#campo-palabra');
     if(campoNuevaPalabra.value == '')
         alert('El campo no puede estar vacío');
     else {
