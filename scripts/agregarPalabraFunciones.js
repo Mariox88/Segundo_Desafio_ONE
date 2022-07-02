@@ -33,7 +33,7 @@ function  actualizarLista(palabra) {
         localStorage.setItem('Palabra', JSON.stringify(palabra));
         localStorage.setItem('Lista', JSON.stringify(listaDePalabras));
         alert('Palabra guardada exitosamente');
-        window.location.href='../juegoAhorcado.html';               
+        window.location.href='./juegoAhorcado.html';               
     }
     else {
         alert('Palabra ya registrada intenta de nuevo');        
