@@ -14,7 +14,7 @@
 .contenedor .contenido {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     grid-column: 1 span ;
 }
 #tablero {
